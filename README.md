@@ -1,18 +1,50 @@
-# Tier 2 Slack Bot
+# 🤖 Tier 2 Slack Bot - Asistente Operativo Inteligente
 
-## Overview
-The **Tier 2 Slack Bot Assistant** is a Slack bot designed to automate key operational tasks for the team. Integrated with OpenAI, the bot streamlines workflows by providing natural language processing capabilities, enhancing productivity. It can retrieve data, process Slack messages, and offer real-time support to team members.
+[![Python](https://img.shields.io/badge/Python-3.9+-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![Flask](https://img.shields.io/badge/Flask-2.0-000?logo=flask&logoColor=white)](https://flask.palletsprojects.com/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-5.0-47A248?logo=mongodb&logoColor=white)](https://www.mongodb.com/)
+[![OpenAI](https://img.shields.io/badge/OpenAI-GPT-412991?logo=openai&logoColor=white)](https://openai.com/)
 
-## Features
-**Process Requests from Slack:** Responds to app mention events and handles user requests.
-**OpenAI Integration:** Utilizes OpenAI for natural language processing to generate intelligent responses.
-**MongoDB Integration:** Fetches data such as opening hours, contact information, and delivery settings from a MongoDB database.
-**Send Messages to Slack:** Sends messages to specified Slack channels.
-**Test Order Functionality (in development):** Automating test orders for operational testing.
+Bot de Slack inteligente que automatiza procesos operativos mediante NLP y gestión de datos en tiempo real, mejorando la productividad del equipo.
 
-## Technologies
-**Slack SDK:** For handling Slack API interactions.
-**Flask:** Web framework to create a server and endpoints for Slack event processing.
-**OpenAI API:** For natural language processing capabilities.
-**MongoDB:** For storing and retrieving operational data.
-**Python:** Programming language used for backend development.
+## 🌟 Características Principales
+
+### 🤖 Automatización Inteligente
+- **Procesamiento de solicitudes**: Respuesta a menciones (`@bot`) en tiempo real
+- **Integración con OpenAI**:
+  - ✅ Generación de respuestas contextuales con GPT
+  - ✅ Análisis semántico avanzado
+- **Envío automatizado**: Mensajes programados a canales específicos
+
+### 🗃️ Gestión de Datos
+- **Conexión con MongoDB**:
+  - 📅 Horarios operativos
+  - 📞 Información de contacto
+  - ⚙️ Configuraciones de entrega
+- **Actualizaciones dinámicas**: Sincronización en tiempo real
+
+### 🛠️ Arquitectura
+- **Diseño modular**:
+  - 🧩 Servicios independientes (Slack, OpenAI, MongoDB)
+  - 🔐 Gestión segura de credenciales
+- **Pruebas**:
+  - 🧪 Unitarias con pytest (cobertura > 75%)
+  - 🚦 Integración continua (GitHub Actions)
+
+## 🛠️ Tecnologías Utilizadas
+
+
+| Categoría         | Tecnologías                                      |
+|-------------------|-------------------------------------------------|
+| **Backend**       | Python 3.9, Flask, Slack SDK                    |
+| **Base de Datos** | MongoDB Atlas, PyMongo                          |
+| **IA**            | OpenAI API, Prompt Engineering                 |
+| **Herramientas**  | Postman, Ngrok, Python-dotenv                  |
+
+## ⚙️ Configuración
+
+1. **Requisitos**:
+```bash
+Python 3.9+
+MongoDB Atlas Cluster
+Slack Workspace con permisos de bot
